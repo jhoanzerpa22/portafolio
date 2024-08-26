@@ -1,0 +1,89 @@
+{
+    "herramientas": [
+        {
+            "nombre": "Angular",
+            "imagen": "./assets/image/technologies/angular.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "Laravel",
+            "imagen": "./assets/image/technologies/Laravel.png",
+            "estado": 2
+        },
+        {
+            "nombre": "Vue Js",
+            "imagen": "./assets/image/technologies/vue.png",
+            "estado": 2
+        },
+        {
+            "nombre": "PHP",
+            "imagen": "./assets/image/technologies/php.png",
+            "estado": 2
+        },
+        {
+            "nombre": "JQuery",
+            "imagen": "./assets/image/technologies/JQuery.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "SQL Server",
+            "imagen": "./assets/image/technologies/SQLServer.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "MySQL",
+            "imagen": "./assets/image/technologies/mysql.png",
+            "estado": 2
+        },
+        {
+            "nombre": "PostGreSql",
+            "imagen": "./assets/image/technologies/postgre.png",
+            "estado": 2
+        },
+        {
+            "nombre": "Node JS",
+            "imagen": "./assets/image/technologies/nodejs.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "GoLand",
+            "imagen": "./assets/image/technologies/go.png",
+            "estado": 2
+        },
+        {
+            "nombre": "Bulma CSS",
+            "imagen": "./assets/image/technologies/bulmacss.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "Tailwind CSS",
+            "imagen": "./assets/image/technologies/tailwind.png",
+            "estado": 2
+        },
+        {
+            "nombre": "Visual Studio",
+            "imagen": "./assets/image/technologies/Visual-Studio.webp",
+            "estado": 1
+        },
+        {
+            "nombre": "Visual Studio Code",
+            "imagen": "./assets/image/technologies/Visual-Studio-Code.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "Postman",
+            "imagen": "./assets/image/technologies/Postman.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "Firebase",
+            "imagen": "./assets/image/technologies/firebase.webp",
+            "estado": 2
+        },
+        {
+            "nombre": "Github",
+            "imagen": "./assets/image/technologies/GitHub.webp",
+            "estado": 2
+        }
+    ]
+}
