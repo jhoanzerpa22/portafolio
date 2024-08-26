@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import learningJSON from '../../../../assets/json/Learning.json';
+import learningJSON from '../../../../assets/json/learning.json';
 import { Certificate } from '../../../models/certificate';
 
 @Injectable({
