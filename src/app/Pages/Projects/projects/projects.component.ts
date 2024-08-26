@@ -26,15 +26,25 @@ export class ProjectsComponent {
   }
 
   ngOnInit(): void {
-    this.spinnerService.show();
+    //this.spinnerService.show();
     this.language = this.translate.currentLang;
     this.textButton = this.language == 'es' ? this.textButtonLanguage[0] : this.textButtonLanguage[1]
   }
 
   getProjects() {
-    this.projectService.cargarProyectos().subscribe((data: any) => {
+    this.projectList = [{
+      title: 'Antofa Innova',
+      titleEn: 'Antofa Innova',
+      tool: '',
+      description: 'Proyecto de antofagasta',
+      descriptionEn: 'Proyecto de antofagasta',
+      image: '',
+      image2: '',
+      url: ''
+    }] as Project[];
+    /*this.projectService.cargarProyectos().subscribe((data: any) => {
       this.projectList = data as Project[];
       this.spinnerService.hide();
-    });
+    });*/
   }
 }
