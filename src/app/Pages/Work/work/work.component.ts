@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Work } from '../../../models/Work.model';
+import { Work } from '../../../models/work.model';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { WorkService } from '../services/work.service'

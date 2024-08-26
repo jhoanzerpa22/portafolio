@@ -16,15 +16,15 @@ export class NavbarComponent implements OnInit {
   desplegar(): void {
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('#navBarMenu');
-    burger.classList.toggle('is-active');
-    menu.classList.toggle('is-active');
+    burger?.classList.toggle('is-active');
+    menu?.classList.toggle('is-active');
 
-    if(document.getElementById("overlay").classList.contains("overlay") ){
-      document.getElementById("overlay").classList.remove("overlay");
-      document.getElementById("menuMovil").classList.remove("is-fixed-top");
+    if(document.getElementById("overlay")?.classList.contains("overlay") ){
+      document.getElementById("overlay")?.classList.remove("overlay");
+      document.getElementById("menuMovil")?.classList.remove("is-fixed-top");
     }else{
-      document.getElementById("overlay").classList.add("overlay");
-      document.getElementById("menuMovil").classList.add("is-fixed-top");
+      document.getElementById("overlay")?.classList.add("overlay");
+      document.getElementById("menuMovil")?.classList.add("is-fixed-top");
     }
     window.scrollTo(0, 0)
   }
@@ -32,10 +32,10 @@ export class NavbarComponent implements OnInit {
   recoger(): void {
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('#navBarMenu');
-    burger.classList.remove('is-active');
-    menu.classList.remove('is-active');
-    document.getElementById("overlay").classList.remove("overlay");
-    document.getElementById("menuMovil").classList.remove("is-fixed-top");
+    burger?.classList.remove('is-active');
+    menu?.classList.remove('is-active');
+    document.getElementById("overlay")?.classList.remove("overlay");
+    document.getElementById("menuMovil")?.classList.remove("is-fixed-top");
     window.scrollTo(0, 0)
   }
 

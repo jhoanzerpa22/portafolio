@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ToolsLanguages } from '../../../../models/ToolsLanguages.model';
+import { ToolsLanguages } from '../../../../models/toolsLanguages.model';
 import toolsLanguagesJSON from '../../../../../assets/JSON/Tools-Languages.json';
 
 @Injectable({

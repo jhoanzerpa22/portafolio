@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { InfiniteCarouselType } from '../../../../models/InfiniteCarouselType';
+import { InfiniteCarouselType } from '../../../../models/infiniteCarouselType';
 
 @Component({
   selector: 'app-infinite-carousel',

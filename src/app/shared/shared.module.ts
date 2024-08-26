@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SocialNetworkComponent } from './components/social-network/social-network.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
+//import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { RouterModule } from '@angular/router';
 import { ToolsLanguagesComponent } from './components/tools-languages/tools-languages.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -13,14 +13,14 @@ import { TranslateModule } from '@ngx-translate/core';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    ContactFormComponent,
+    //ContactFormComponent,
     SocialNetworkComponent,
     ToolsLanguagesComponent
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
-    ContactFormComponent,
+    //ContactFormComponent,
     SocialNetworkComponent,
     ToolsLanguagesComponent,
     TranslateModule
