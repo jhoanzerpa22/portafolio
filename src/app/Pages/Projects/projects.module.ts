@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsRoutingModule } from './projects.routers';
 import { TranslateModule } from '@ngx-translate/core';
@@ -13,6 +13,7 @@ import { RedirectButtonComponent } from './components/redirect-button/redirect-b
     ProjectsRoutingModule,
     TranslateModule,
     ToolsLanguagesModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectsModule { }

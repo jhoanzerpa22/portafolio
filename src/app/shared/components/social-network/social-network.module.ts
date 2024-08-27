@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialNetworkComponent } from './social-network/social-network.component';
 import { ContactModule } from '../contact/contact.module';
@@ -11,6 +11,7 @@ import { ContactModule } from '../contact/contact.module';
   imports: [
     CommonModule,
     ContactModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SocialNetworkModule { }

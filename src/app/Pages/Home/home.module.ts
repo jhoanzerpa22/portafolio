@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { HomeRoutingModule } from './home.routes';
@@ -11,6 +11,7 @@ import { TypeWriterComponent } from './components/type-writer/type-writer.compon
     CommonModule,
     HomeRoutingModule,
     TranslateModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeModule { }

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WorkRoutingModule } from './work.routes';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +12,8 @@ import { CardComponent } from './components/card/card.component';
     CommonModule,
     TranslateModule,
     WorkRoutingModule,
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
 export class WorkModule { }

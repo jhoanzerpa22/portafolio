@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InfiniteCarouselComponent } from './infinite-carousel/infinite-carousel.component';
 
@@ -9,6 +9,7 @@ import { InfiniteCarouselComponent } from './infinite-carousel/infinite-carousel
   exports: [InfiniteCarouselComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class InfiniteCarouselModule { }
