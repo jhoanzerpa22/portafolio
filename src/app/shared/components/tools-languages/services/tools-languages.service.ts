@@ -17,7 +17,7 @@ export class ToolsLanguagesService {
    */
   cargarHerramientas() {
     for (const item in toolsLanguagesJSON.herramientas) {
-      let herramienta = new ToolsLanguages();
+      const herramienta = new ToolsLanguages();
       herramienta.nombre = toolsLanguagesJSON.herramientas[item].nombre;
       herramienta.imagen = toolsLanguagesJSON.herramientas[item].imagen;
       herramienta.estado = toolsLanguagesJSON.herramientas[item].estado;

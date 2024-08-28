@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { /*AfterViewInit, */Component, Input, OnInit } from '@angular/core';
 import { ToolsLanguages } from '../../../models/toolsLanguages.model';
 import { ToolsLanguagesService } from '../../components/tools-languages/services/tools-languages.service';
 //import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
@@ -8,7 +8,7 @@ import { ToolsLanguagesService } from '../../components/tools-languages/services
   templateUrl: './tools-languages.component.html',
   styleUrls: ['./tools-languages.component.css']
 })
-export class ToolsLanguagesComponent implements OnInit, AfterViewInit {
+export class ToolsLanguagesComponent implements OnInit/*, AfterViewInit*/ {
 
   listaHerramientas: ToolsLanguages[] = []
 
@@ -32,14 +32,14 @@ export class ToolsLanguagesComponent implements OnInit, AfterViewInit {
   /**
    * visualización carusel para los logos
    */
-  ngAfterViewInit() {
-    /*bulmaCarousel.attach('#carousel', {
+ /* ngAfterViewInit() {
+    bulmaCarousel.attach('#carousel', {
       slidesToScroll: 1,
       slidesToShow: 1,
       autoplay: true,
       loop: true,
       pagination: false,
       infinite: true
-    });*/
-  }
+    });
+  }*/
 }

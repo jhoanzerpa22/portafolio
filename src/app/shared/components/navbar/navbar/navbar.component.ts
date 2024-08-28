@@ -10,8 +10,8 @@ export class NavbarComponent {
   constructor(private translate: TranslateService) { }
 
   displayMenu(): void {
-    let burger = document.querySelector('.burger');
-    let menu = document.querySelector('#navBarMenu');
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#navBarMenu');
     burger?.classList.toggle('is-active');
     menu?.classList.toggle('is-active');
 
@@ -26,8 +26,8 @@ export class NavbarComponent {
   }
 
   pickUpMenu(): void {
-    let burger = document.querySelector('.burger');
-    let menu = document.querySelector('#navBarMenu');
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#navBarMenu');
     burger?.classList.remove('is-active');
     menu?.classList.remove('is-active');
     document.getElementById("overlay")?.classList.remove("overlay");

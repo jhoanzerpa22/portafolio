@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { motivationalQuotes } from '../../../common/globalVariables';
 
@@ -7,7 +7,7 @@ import { motivationalQuotes } from '../../../common/globalVariables';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   phraseEn: string[] = motivationalQuotes.en;
   phraseEs: string[] = motivationalQuotes.es;
   lang: string = "es";

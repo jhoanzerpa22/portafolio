@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Work } from '../../../models/work.model';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
@@ -9,7 +9,7 @@ import { WorkService } from '../services/work.service'
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss'
 })
-export class WorkComponent {
+export class WorkComponent implements OnInit {
   workList: Work[] = [];
   language: string = "es";
 

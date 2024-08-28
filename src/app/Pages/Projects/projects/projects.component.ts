@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { Project } from '../../../models/project';
@@ -9,7 +9,7 @@ import { ProjectsService } from '../services/projects.service';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
   projectList: Project[] = [];
   language: string = "es";
   textButton: string = 'Ver más - Código - Demostración - Ver más - '

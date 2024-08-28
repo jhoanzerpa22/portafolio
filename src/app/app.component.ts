@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { language } from './common/globalVariables';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit  {
   constructor(
     private router: Router,
     private translate: TranslateService
   ) {
-    let lenguajeNavegador = window.navigator.language;
+    const lenguajeNavegador = window.navigator.language;
     this.translate.addLangs([language.es.toString(), language.en.toString()]);
     this.translate.setDefaultLang('es');
     if (lenguajeNavegador.toString().indexOf("en") !== -1) {

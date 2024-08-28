@@ -1,11 +1,11 @@
-import { Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { Component, /*OnInit,*/ AfterViewInit, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-type-writer',
   templateUrl: './type-writer.component.html',
   styleUrl: './type-writer.component.scss'
 })
-export class TypeWriterComponent {
+export class TypeWriterComponent implements AfterViewInit {
   @ViewChild("textElement") textElement!: ElementRef;
   @ViewChild("blinkElement") blinkElement!: ElementRef;
   @Input() wordArray: string[] = [];

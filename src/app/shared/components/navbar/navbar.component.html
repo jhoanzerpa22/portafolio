@@ -8,31 +8,31 @@
 
     <div class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item has-text-white" routerLink="home" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="home" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                   <i class="fa fa-home" aria-hidden="true"></i>
                 </span>
                 <span>{{"HOME_NAVBAR"|translate}}</span>
             </a>
-            <a class="navbar-item has-text-white" routerLink="perfil" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="perfil" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                     <i class="fa fa-user" aria-hidden="true"></i>
                 </span>
                 <span>{{"PERFIL_NAVBAR"|translate}}</span>
             </a>
-            <a class="navbar-item has-text-white" routerLink="trabajos" routerLinkActive="activo" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="trabajos" routerLinkActive="activo" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                     <i class="fa fa-briefcase" aria-hidden="true"></i>
                 </span>
                 <span>{{"TRABAJOS_NAVBAR"|translate}}</span>
             </a>
 
-            <span class="navbar-item force-center is-hidden-touch" (click)="recoger()">
+            <span class="navbar-item force-center is-hidden-touch" (click)="recoger()" (keyup.enter)="recoger()">
                 <img src="assets/image/logo/multiPlatform2.gif" width="30" height="100%" alt="JhoanZerpa">
                 <h1 class="has-text-white no-seleccion-texto">Dev-JhoanZerpa</h1>
             </span>
 
-            <a class="navbar-item has-text-white" routerLink="proyectosPersonales" routerLinkActive="activo" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="proyectosPersonales" routerLinkActive="activo" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                     <i class="fa fa-code-fork" aria-hidden="true"></i>
                 </span>
@@ -44,12 +44,12 @@
                 </span>
                 <span>{{"APRENDIENDO_NAVBAR"|translate}}</span>
             </a>-->
-            <a class="button is-ghost is-inverted is-medium has-tooltip-bottom has-tooltip-primary" (click)="CambioIdioma('es')" data-tooltip="Español / Spanish">
+            <a class="button is-ghost is-inverted is-medium has-tooltip-bottom has-tooltip-primary" (click)="CambioIdioma('es')" (keyup.enter)="CambioIdioma('es')" data-tooltip="Español / Spanish">
                 <figure class="icon is-large idiomas">
                     <img src="assets/image/languages/es.svg " alt="Idioma Español - Spanish language "> </figure>
             </a>
 
-            <a class="button is-ghost is-inverted is-medium has-tooltip-bottom has-tooltip-primary" (click)="CambioIdioma('en') " data-tooltip="Inglés / English">
+            <a class="button is-ghost is-inverted is-medium has-tooltip-bottom has-tooltip-primary" (click)="CambioIdioma('en')" (keyup.enter)="CambioIdioma('en')" data-tooltip="Inglés / English">
                 <figure class="icon is-large idiomas">
                     <img src="assets/image/languages/en.svg " alt="Idioma Ingles - English language ">
                 </figure>
@@ -66,7 +66,7 @@
           <h1 class="has-text-white no-seleccion-texto">Dev-JhoanZerpa</h1>
       </span>
 
-        <div role="button" class="navbar-burger burger menu-icon" aria-label="menu" aria-expanded="false" data-target="navBarMenu" id="burger" (click)="desplegar()">
+        <div role="button" class="navbar-burger burger menu-icon" aria-label="menu" aria-expanded="false" data-target="navBarMenu" id="burger" (click)="desplegar()" (keyup.enter)="desplegar()">
             <span class="has-text-white"></span>
             <span class="has-text-white"></span>
             <span class="has-text-white"></span>
@@ -75,31 +75,31 @@
     <div id="overlay" class=""></div>
     <div id="navBarMenu" class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item has-text-white" routerLink="home" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="home" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                 <i class="fa fa-home" aria-hidden="true"></i>
               </span>
                 <span>{{"HOME_NAVBAR"|translate}}</span>
             </a>
-            <a class="navbar-item has-text-white" routerLink="perfil" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="perfil" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                   <i class="fa fa-user" aria-hidden="true"></i>
               </span>
                 <span>{{"PERFIL_NAVBAR"|translate}}</span>
             </a>
-            <a class="navbar-item has-text-white" routerLink="trabajos" routerLinkActive="activo" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="trabajos" routerLinkActive="activo" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                   <i class="fa fa-briefcase" aria-hidden="true"></i>
               </span>
                 <span>{{"TRABAJOS_NAVBAR"|translate}}</span>
             </a>
 
-            <span class="navbar-item force-center is-hidden-touch" routerLink="home" (click)="recoger()">
+            <span class="navbar-item force-center is-hidden-touch" routerLink="home" (click)="recoger()" (keyup.enter)="recoger()">
               <img src="assets/image/logo/multiPlatform2.gif" width="30" height="100%" alt="DevJhoanZerpa">
               <h1 class="has-text-white no-seleccion-texto">Dev-JhoanZerpa</h1>
           </span>
 
-            <a class="navbar-item has-text-white" routerLink="proyectosPersonales" routerLinkActive="activo" (click)="recoger()">
+            <a class="navbar-item has-text-white" routerLink="proyectosPersonales" routerLinkActive="activo" (click)="recoger()" (keyup.enter)="recoger()">
                 <span class="icon">
                   <i class="fa fa-code-fork" aria-hidden="true"></i>
               </span>
@@ -111,12 +111,12 @@
               </span>
                 <span>{{"APRENDIENDO_NAVBAR"|translate}}</span>
             </a>-->
-            <a class="button is-ghost is-inverted is-medium" (click)="CambioIdioma('es');recoger();">
+            <a class="button is-ghost is-inverted is-medium" (click)="CambioIdioma('es');recoger();" (keyup.enter)="CambioIdioma('es');recoger();">
                 <figure class="icon is-large idiomas">
                     <img src="assets/image/languages/es.svg " alt="Idioma Español - Spanish language ">
                 </figure>
             </a>
-            <a class="button is-ghost is-inverted is-medium" (click)="CambioIdioma('en');recoger();">
+            <a class="button is-ghost is-inverted is-medium" (click)="CambioIdioma('en');recoger();" (keyup.enter)="CambioIdioma('en');recoger();">
                 <figure class="icon is-large idiomas">
                     <img src="assets/image/languages/en.svg " alt="Idioma Ingles - English language ">
                 </figure>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ToolsLanguagesService } from '../services/tools-languages.service';
 import { ToolsLanguages } from '../../../../models/toolsLanguages.model';
 import { InfiniteCarouselType } from '../../../../models/infiniteCarouselType';
@@ -8,7 +8,7 @@ import { InfiniteCarouselType } from '../../../../models/infiniteCarouselType';
   templateUrl: './tools-languages.component.html',
   styleUrl: './tools-languages.component.scss'
 })
-export class ToolsLanguagesComponent {
+export class ToolsLanguagesComponent implements OnInit {
   listaHerramientas: ToolsLanguages[] = []
   carouselList: InfiniteCarouselType[] = []
 

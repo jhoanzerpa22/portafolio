@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component/*, OnInit*/ } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,16 +6,16 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent/* implements OnInit*/ {
 
   constructor(private translate: TranslateService) { }
 
-  ngOnInit(): void {
-  }
+  /*ngOnInit(): void {
+  }*/
 
   desplegar(): void {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('#navBarMenu');
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#navBarMenu');
     burger?.classList.toggle('is-active');
     menu?.classList.toggle('is-active');
 
@@ -30,8 +30,8 @@ export class NavbarComponent implements OnInit {
   }
 
   recoger(): void {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('#navBarMenu');
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#navBarMenu');
     burger?.classList.remove('is-active');
     menu?.classList.remove('is-active');
     document.getElementById("overlay")?.classList.remove("overlay");

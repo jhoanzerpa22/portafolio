@@ -6,17 +6,17 @@
           type="radio"
           [id]="'item' + index"
           name="basic_carousel"
-          [checked]="index == 0"
+          [checked]="index === 0"
         />
         <label class="label_order{{ item.order }} has-text-black" [for]="'item' + index">
           {{ item.title }}
         </label>
         <div class="content">
           <img [src]="item.image" alt="" class="image" width="35%" />
-          <p class="mt-2 has-text-centered has-text-black" *ngIf="language == 'es'">
+          <p class="mt-2 has-text-centered has-text-black" *ngIf="language === 'es'">
             Cargo 🧑🏼‍💻: {{ item.description | uppercase }}
           </p>
-          <p class="mt-2 has-text-centered has-text-black" *ngIf="language == 'en'">
+          <p class="mt-2 has-text-centered has-text-black" *ngIf="language === 'en'">
             Position 🧑🏼‍💻: {{ item.descriptionEn | uppercase }}
           </p>
           <p class="mt-1 has-text-black">{{ item.startDate }} - {{ item.endDate }}</p>
@@ -25,7 +25,7 @@
             [href]="item.url"
             target="_blank"
             class="button is-outlined is-primary is-normal has-text-black"
-            *ngIf="item.url != '' && item.url != '#'"
+            *ngIf="item.url !== '' && item.url !== '#'"
           >
             {{ textButton }}
           </a>

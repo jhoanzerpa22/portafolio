@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Work } from '../../../../models/work.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Work } from '../../../../models/work.model';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent {
+export class CardComponent implements OnChanges {
   @Input() language: string = 'es';
   @Input() workList: Work[] = [];
   textButton = this.language == 'es' ? 'Página de la Empresa' : 'Company Page'

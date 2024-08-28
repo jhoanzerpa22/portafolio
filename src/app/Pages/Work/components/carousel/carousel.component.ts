@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Work } from '../../../../models/work.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Work } from '../../../../models/work.model';
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnChanges {
   @Input() language: string = 'es';
   @Input() workList: Work[] = [];
 

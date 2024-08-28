@@ -20,16 +20,16 @@
             />
           </div>
           <div class="contenido">
-            <h2 class="title is-3 has-text-centered" *ngIf="language == 'es'">
+            <h2 class="title is-3 has-text-centered" *ngIf="language === 'es'">
               {{ project.title }}
             </h2>
-            <p class="has-text-justified" *ngIf="language == 'es'">
+            <p class="has-text-justified" *ngIf="language === 'es'">
               {{ project.description }}
             </p>
-            <h2 class="title is-3 has-text-centered" *ngIf="language == 'en'">
+            <h2 class="title is-3 has-text-centered" *ngIf="language === 'en'">
               {{ project.titleEn }}
             </h2>
-            <p class="has-text-justified" *ngIf="language == 'en'">
+            <p class="has-text-justified" *ngIf="language === 'en'">
               {{ project.descriptionEn }}
             </p>
           </div>
@@ -56,19 +56,19 @@
               <div
                 class="media-content is-flex is-justify-content-center is-align-content-center"
               >
-                <p class="title is-6 no-padding" *ngIf="language == 'es'">
+                <p class="title is-6 no-padding" *ngIf="language === 'es'">
                   {{ project.title | uppercase }}
                 </p>
-                <p class="title is-6 no-padding" *ngIf="language == 'en'">
+                <p class="title is-6 no-padding" *ngIf="language === 'en'">
                   {{ project.titleEn | uppercase }}
                 </p>
               </div>
             </div>
             <div class="content my-0 mb-0">
-              <p class="has-text-justified" *ngIf="language == 'es'">
+              <p class="has-text-justified" *ngIf="language === 'es'">
                 {{ project.description }}
               </p>
-              <p class="has-text-justified" *ngIf="language == 'en'">
+              <p class="has-text-justified" *ngIf="language === 'en'">
                 {{ project.descriptionEn }}
               </p>
               <app-redirect-button

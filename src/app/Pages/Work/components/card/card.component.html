@@ -12,19 +12,19 @@
             </h1>
           </div>
           <div class="row is-full">
-            <div class="card-date has-text-centered" *ngIf="language == 'es'">
+            <div class="card-date has-text-centered" *ngIf="language === 'es'">
               📅 {{ item.startDate }} → {{ item.endDate }}
             </div>
 
-            <div class="card-date has-text-centered" *ngIf="language == 'en'">
+            <div class="card-date has-text-centered" *ngIf="language === 'en'">
               📅 {{ item.startDateEn }} → {{ item.endDateEn }}
             </div>
           </div>
 
-          <p class="card-description has-text-centered" *ngIf="language == 'es'">
+          <p class="card-description has-text-centered" *ngIf="language === 'es'">
             Cargo 🧑🏼‍💻: {{ item.description | titlecase }}
           </p>
-          <p class="card-description has-text-centered" *ngIf="language == 'en'">
+          <p class="card-description has-text-centered" *ngIf="language === 'en'">
             Position 🧑🏼‍💻: {{ item.descriptionEn | titlecase }}
           </p>
         </div>
@@ -34,7 +34,7 @@
         [href]="item.url"
         target="_blank"
         class="button is-outlined is-primary is-normal mt-3 card-button"
-        *ngIf="item.url != '' && item.url != '#'"
+        *ngIf="item.url !== '' && item.url !== '#'"
       >
         {{ textButton }}
       </a>
