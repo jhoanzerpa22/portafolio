@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ToolsLanguages } from '../../../models/toolsLanguages.model';
-import toolsLanguagesJSON from '../../../../../assets/json/tools-languages.json';
+import toolsLanguagesJSON from '../../../json/tools-languages.json';
 
 @Injectable({
   providedIn: 'root'
