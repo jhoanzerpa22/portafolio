@@ -7,12 +7,11 @@ import { NgParticlesModule } from 'ng-particles';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { HomeModule } from './pages/home/home.module';
-import { WorkModule } from './pages/work/work.module';
-import { ProjectsModule } from './pages/projects/projects.module';
-import { LearningModule } from './pages/learning/learning.module';
-
-import { ProfileModule } from './pages/profile/profile.module';
+//import { HomeModule } from './pages/home/home.module';
+//import { WorkModule } from './pages/work/work.module';
+//import { ProjectsModule } from './pages/projects/projects.module';
+//import { LearningModule } from './pages/learning/learning.module';
+//import { ProfileModule } from './pages/profile/profile.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LayoutComponent } from './shared/components/layout/layout/layout.component';
@@ -48,11 +47,11 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserAnimationsModule,
     HttpClientModule,
     NgxSpinnerModule,
-    HomeModule,
-    WorkModule,
-    ProjectsModule,
-    LearningModule,
-    ProfileModule,
+    //HomeModule,
+    //WorkModule,
+    //ProjectsModule,
+    //LearningModule,
+    //ProfileModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { WorkComponent } from './work/work.component';
 
 const routes: Routes = [
-  { path: 'trabajos', component: WorkComponent }
+  { path: '', component: WorkComponent }
 ];
 
 @NgModule({

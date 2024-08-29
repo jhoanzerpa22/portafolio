@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: 'proyectosPersonales', component: ProjectsComponent }
+  { path: '', component: ProjectsComponent }
 ];
 
 @NgModule({

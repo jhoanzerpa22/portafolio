@@ -4,7 +4,7 @@ import { LearningComponent } from './learning/learning.component';
 
 
 const routes: Routes = [
-  { path: 'cursos', component: LearningComponent }
+  { path: '', component: LearningComponent }
 ];
 
 @NgModule({
