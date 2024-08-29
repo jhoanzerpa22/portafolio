@@ -14,7 +14,11 @@ declare module '@angular/core' {
 }
 const routes: Routes = [
   { path: 'home', loadChildren: () => import('./shared/components/pages/home/home.module').then(home => home.HomeModule) },
-  /*{ path: 'home', loadChildren: () => import('./pages/home/home.module').then(home => home.HomeModule) },
+  { path: 'perfil', loadChildren: () => import('./shared/components/pages/profile/profile.module').then(profile => profile.ProfileModule) },
+  { path: 'proyectosPersonales', loadChildren: () => import('./shared/components/pages/projects/projects.module').then(projects => projects.ProjectsModule) },
+  { path: 'trabajos', loadChildren: () => import('./shared/components/pages/work/work.module').then(work => work.WorkModule) },
+  /*{ path: 'cursos', loadChildren: () => import('./shared/components/pages/learning/learning.module').then(learning => learning.LearningModule) },
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(home => home.HomeModule) },
   { path: 'perfil', loadChildren: () => import('./pages/profile/profile.module').then(profile => profile.ProfileModule) },
   { path: 'proyectosPersonales', loadChildren: () => import('./pages/projects/projects.module').then(projects => projects.ProjectsModule) },
   { path: 'trabajos', loadChildren: () => import('./pages/work/work.module').then(work => work.WorkModule) },
