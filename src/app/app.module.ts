@@ -7,6 +7,7 @@ import { NgParticlesModule } from 'ng-particles';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
+
 //import { HomeModule } from './pages/home/home.module';
 //import { WorkModule } from './pages/work/work.module';
 //import { ProjectsModule } from './pages/projects/projects.module';
@@ -30,7 +31,6 @@ import { environment } from '../environments/environment';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-
 
 @NgModule({
   declarations: [
