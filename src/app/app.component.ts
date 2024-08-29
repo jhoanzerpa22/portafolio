@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { language } from './common/globalVariables';
+import { language } from './common/globalvariables';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

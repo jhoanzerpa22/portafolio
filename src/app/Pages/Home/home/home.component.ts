@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
-import { motivationalQuotes } from '../../../common/globalVariables';
+import { motivationalQuotes } from '../../../common/globalvariables';
 
 @Component({
   selector: 'app-home',
