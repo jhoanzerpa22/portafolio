@@ -12,7 +12,9 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:import/errors",
+        "plugin:import/warnings"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -30,7 +32,26 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "import/no-unresolved": "error",
+        "import/named": "error",
+        "import/default": "error",
+        "import/namespace": "error",
+        "import/export": "error",
+        "import/resolver": {
+          "typescript": {},
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      },
+      "settings": {
+        "import/resolver": {
+        "typescript": {},
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+        }
       }
     },
     {
