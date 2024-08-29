@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { language } from './common/globalvariables';
+//import { language } from './common/globalvariables';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,12 +13,12 @@ export class AppComponent implements OnInit  {
     private translate: TranslateService
   ) {
     const lenguajeNavegador = window.navigator.language;
-    this.translate.addLangs([language.es.toString(), language.en.toString()]);
+    this.translate.addLangs([/*language.es.toString(), language.en.toString()*/'es','en']);
     this.translate.setDefaultLang('es');
     if (lenguajeNavegador.toString().indexOf("en") !== -1) {
-      this.translate.use(language.en.toString());
+      this.translate.use(/*language.en.toString()*/'en');
     } else {
-      this.translate.use(language.es.toString());
+      this.translate.use(/*language.es.toString()*/'es');
     }
   }
 

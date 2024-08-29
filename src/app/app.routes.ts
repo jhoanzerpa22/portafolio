@@ -5,7 +5,7 @@ import { ProjectsModule } from './pages/projects/projects.module';
 import { WorkModule } from './pages/work/work.module';
 import { LearningModule } from './pages/learning/learning.module';*/
 
-const routes: Routes = [
+const routes: Routes = [/*
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then(home => home.HomeModule) },
   { path: 'perfil', loadChildren: () => import('./pages/profile/profile.module').then(profile => profile.ProfileModule) },
   { path: 'proyectosPersonales', loadChildren: () => import('./pages/projects/projects.module').then(projects => projects.ProjectsModule) },
@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'cursos', loadChildren: () => import('./pages/learning/learning.module').then(learning => learning.LearningModule) },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', pathMatch: 'full', redirectTo: '' }];
+  { path: '**', pathMatch: 'full', redirectTo: '' }*/];
 
 
 export const AppRouting = RouterModule.forRoot(

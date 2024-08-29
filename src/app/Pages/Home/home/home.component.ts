@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
-import { motivationalQuotes } from '../../../common/globalvariables';
+//import { motivationalQuotes } from '../../../common/globalvariables';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +8,8 @@ import { motivationalQuotes } from '../../../common/globalvariables';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit{
-  phraseEn: string[] = motivationalQuotes.en;
-  phraseEs: string[] = motivationalQuotes.es;
+  phraseEn: string[] = ["10+ Years of Experience"]/*motivationalQuotes.en*/;
+  phraseEs: string[] = ["10+ Años de Experiencia"]/*motivationalQuotes.es*/;
   lang: string = "es";
 
   constructor(private translate: TranslateService) {
