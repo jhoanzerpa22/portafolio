@@ -1,5 +1,5 @@
 import { /*AfterViewInit, */Component, Input, OnInit } from '@angular/core';
-import { ToolsLanguages } from '../../../models/toolsLanguages.model';
+import { ToolsLanguages } from '../../models/toolsLanguages.model';
 import { ToolsLanguagesService } from '../../components/tools-languages/services/tools-languages.service';
 //import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
 

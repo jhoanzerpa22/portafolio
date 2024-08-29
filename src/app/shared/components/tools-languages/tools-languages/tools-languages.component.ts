@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ToolsLanguagesService } from '../services/tools-languages.service';
-import { ToolsLanguages } from '../../../../models/toolsLanguages.model';
-import { InfiniteCarouselType } from '../../../../models/infiniteCarouselType';
+import { ToolsLanguages } from '../../../models/toolsLanguages.model';
+import { InfiniteCarouselType } from '../../../models/infiniteCarouselType';
 
 @Component({
   selector: 'app-tools-languages',

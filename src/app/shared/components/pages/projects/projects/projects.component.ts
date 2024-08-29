@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { Project } from '../../../../../models/project';
+import { Project } from '../../../../models/project';
 import { ProjectsService } from '../services/projects.service';
 
 @Component({

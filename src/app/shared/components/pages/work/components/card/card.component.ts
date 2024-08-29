@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Work } from '../../../../../../models/work.model';
+import { Work } from '../../../../../models/work.model';
 
 @Component({
   selector: 'app-card',

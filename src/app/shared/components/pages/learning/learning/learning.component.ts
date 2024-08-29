@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Certificate } from '../../../models/certificate';
+import { Certificate } from '../../../../models/certificate';
 import { LearningService } from '../services/learning.service';
 
 @Component({
